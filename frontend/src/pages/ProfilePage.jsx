@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useAuthStore } from "../store/useAuthStore";
-import { Camera, Mail, User, XCircle } from "lucide-react";
-import { uploadImage } from "../utils/cloudinary";
+import { Camera, Mail, User } from "lucide-react";
+import { uploadImage } from "../utils/cloudinary"; // Updated import
 
 const ProfilePage = () => {
   const { authUser, isUpdatingProfile, updateProfile } = useAuthStore();
